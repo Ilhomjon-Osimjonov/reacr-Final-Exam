@@ -1,0 +1,235 @@
+/* ProductCard.css */
+.product-card {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image-container {
+    position: relative;
+    padding-top: 100%;
+    background-color: #f8f8f8;
+  }
+  
+  .product-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 10px;
+  }
+  
+  .product-discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #3c3131;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .product-badge {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    background-color: #2196F3;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 0 4px 4px 0;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .favorite-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .favorite-button svg {
+    color: #ccc;
+    font-size: 16px;
+  }
+  
+  .favorite-button:hover svg {
+    color: #FF4747;
+  }
+  
+  .favorite-button.favorite-active svg {
+    color: #FF4747;
+  }
+  
+  .product-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .product-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    height: 36px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+  
+  .product-price-info {
+    margin-bottom: 15px;
+    margin-top: auto;
+  }
+  
+  .product-monthly-price {
+    font-size: 12px;
+    color: #555;
+    background-color: #f8f8f8;
+    padding: 5px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+  
+  .product-old-price {
+    font-size: 12px;
+    color: #999;
+    text-decoration: line-through;
+    margin-bottom: 3px;
+  }
+  
+  .product-current-price {
+    font-size: 16px;
+    color: #FF4747;
+    font-weight: bold;
+  }
+  
+  .add-to-cart-button {
+    background-color: #FFC12F;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #F5B100;
+  }
+  
+  .cart-icon {
+    margin-right: 8px;
+    font-size: 14px;
+  }
+  
+  /* Quantity Control */
+  .quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFC12F;
+    border-radius: 8px;
+    margin-top: 10px;
+    overflow: hidden;
+    height: 40px;
+  }
+  
+  .quantity-btn {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+  }
+  
+  .quantity-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .quantity-display {
+    flex: 1;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+  }
+
+  /* ProductCard.css ga qo'shimcha - miqdorni boshqarish uchun stillar */
+
+.favorite-button.favorite-active svg {
+    color: #FF4747;
+  }
+  
+  .quantity-control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .quantity-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #f5f5f5;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .quantity-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .quantity-display {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+  }

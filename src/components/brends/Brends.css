@@ -1,0 +1,213 @@
+.brand-showcase {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f8fafc;
+  }
+  
+  /* Header Styles */
+  .header {
+    margin-bottom: 30px;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1e293b;
+    margin: 0 0 8px 0;
+  }
+  
+  .view-all {
+    font-size: 16px;
+    color: #3b82f6;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .arrow {
+    margin-left: 8px;
+  }
+  
+  /* Brand Grid */
+  .brand-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .brand-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px 16px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .brand-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .special-card {
+    border: 2px solid #fbbf24;
+    box-shadow: 0 4px 12px rgba(234, 179, 8, 0.3);
+  }
+  
+  .special-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(234, 179, 8, 0.4);
+  }
+  
+  /* Logo Container */
+  .logo-container {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  
+  .brand-logo {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Apple Logo */
+  .apple-logo {
+    width: 32px;
+    height: 38px;
+    border-radius: 8px 8px 12px 12px;
+    position: relative;
+  }
+  
+  .apple-leaf {
+    position: absolute;
+    top: -4px;
+    right: 8px;
+    width: 8px;
+    height: 6px;
+    background-color: inherit;
+    border-radius: 0 4px 0 0;
+  }
+  
+  /* Mi Logo */
+  .mi-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Realme Logo */
+  .realme-logo {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .realme-letter {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Brand Names */
+  .brand-name {
+    font-size: 14px;
+    color: #64748b;
+    font-weight: 500;
+  }
+  
+  .special-brand-name {
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+  }
+  
+  /* Catalog Button */
+  .button-container {
+    text-align: center;
+  }
+  
+  .catalog-button {
+    background-color: #eab308;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 32px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(234, 179, 8, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 8px;
+  }
+  
+  .catalog-button:hover {
+    background-color: #d97706;
+    transform: translateY(-1px);
+  }
+  
+  .grid-icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .grid-dot {
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 1px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .brand-showcase {
+      padding: 16px;
+    }
+    
+    .title {
+      font-size: 24px;
+    }
+    
+    .brand-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 12px;
+    }
+    
+    .brand-card {
+      padding: 20px 12px;
+    }
+    
+    .catalog-button {
+      padding: 14px 24px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .brand-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

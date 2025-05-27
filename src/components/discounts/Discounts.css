@@ -1,0 +1,303 @@
+/* Discounts Wrapper */
+.discounts-wrapper {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Discounts Header */
+.discounts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Discounts Title */
+.discounts-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Discounts Link */
+.discounts-link {
+  color: #FF4747;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.discounts-link:hover {
+  color: #E03030;
+}
+
+/* Discounts Grid */
+.discounts-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+/* Product Card Styles */
+.product-card {
+  position: relative;
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 16px;
+  text-align: left;
+  width: 240px;
+  height: 380px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card img {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+  background-color: #fff;
+}
+
+.product-card .discount {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: #ef4444;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.product-card .favorite {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: #d1d5db;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-size: 20px; 
+  background-color: #fff; 
+  padding: 4px; 
+  border-radius: 50%; 
+}
+
+.product-card .favorite:hover {
+  color: #f97316;
+}
+
+.product-card h3 {
+  font-size: 14px;
+  color: #1f2937;
+  margin: 8px 0;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.product-card .discount-price {
+  background-color: #dfbb29;
+  color: #1f2937;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.product-card .old-price {
+  font-size: 14px;
+  color: #6b7280;
+  text-decoration: line-through;
+  margin-bottom: 4px;
+}
+
+.product-card .price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.product-card button {
+  width: 100%;
+  background-color: #facc15;
+  color: #1f2937;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.product-card button:hover {
+  background-color: #eab308;
+}
+
+/* Interest Wrapper */
+.interest-wrapper {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Interest Header */
+.interest-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Interest Title */
+.interest-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Interest Link */
+.interest-link {
+  color: #FF4747;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.interest-link:hover {
+  color: #E03030;
+}
+
+/* Interest Grid */
+.interest-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+/* Product Card Styles */
+.product-card {
+  position: relative;
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 16px;
+  text-align: left;
+  width: 240px;
+  height: 380px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card img {
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+  background-color: #fff;
+}
+
+.product-card .discount {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: #ef4444;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.product-card .favorite {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: #d1d5db;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-size: 20px; /* Ikonka o‘lchamini aniq qilamiz */
+  background-color: #fff; /* Fonni oq qilamiz */
+  padding: 4px; /* Biroz bo‘shliq qo‘shamiz */
+  border-radius: 50%; /* Dumaloq shakl */
+}
+
+.product-card .favorite:hover {
+  color: #f97316;
+}
+
+.product-card h3 {
+  font-size: 14px;
+  color: #1f2937;
+  margin: 8px 0;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.product-card .discount-price {
+  background-color: #facc15;
+  color: #1f2937;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.product-card .old-price {
+  font-size: 14px;
+  color: #6b7280;
+  text-decoration: line-through;
+  margin-bottom: 4px;
+}
+
+.product-card .price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.product-card button {
+  width: 100%;
+  background-color: #facc15;
+  color: #1f2937;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.product-card button:hover {
+  background-color: #eab308;
+}

@@ -1,0 +1,27 @@
+.favorites-wrapper {
+  width: 100%;
+  min-width: 1200px;
+  height: 100vh;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.favorites-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.favorites-empty {
+  color: #666;
+  font-size: 16px;
+  padding: 20px 0;
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+}
+
